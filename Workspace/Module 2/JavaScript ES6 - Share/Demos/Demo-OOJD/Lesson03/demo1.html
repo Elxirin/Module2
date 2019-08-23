@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+var data = '{"name":"Abcd", "age":55}';
+
+var dataparsed = JSON.parse(data);
+
+console.log(dataparsed.name);
+console.log(dataparsed.age);
+
+var data = '{"name": "Bcd","age": 30,"address": {"streetAddress": "Pimpri Road","city": "Pune"},"phoneNumber": [{"type": "home","number": "111 111-1111"},{"type": "fax","number": "222 222-2222"}]}';
+
+	var json = JSON.parse(data);
+			
+	alert(json["name"]); 
+	alert(json.name); 
+	
+	alert(json.address.streetAddress); 
+	alert(json["address"].city);
+			
+	alert(json.phoneNumber[0].number); 
+	alert(json.phoneNumber[1].type); 
+			
+	alert(json.phoneNumber.number); //undefined
+</script>
+</head>
+<body>
+</body>
+</html>

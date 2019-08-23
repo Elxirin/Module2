@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" /> 
+		<title>ES6 - Arrow functions</title>
+	</head>
+	<body>
+		<h1>ES6 - arrow functions</h1>
+		<h3>Press F12 to open Developer tool to see the results</h3>
+	</body>
+	<script src="./scripts/babel.js"></script>
+	<script type="text/babel">
+	
+		(function(){
+let arrFun = (num1,num2) => num1 + num1;
+   console.log("hss		"+arrFun(4,5));	
+	/*arrow function with one statement*/
+			let addNumbers = (firstNumber,secondNumber) => firstNumber + secondNumber;
+			console.log("Addition : "+addNumbers(4,5));
+			
+}

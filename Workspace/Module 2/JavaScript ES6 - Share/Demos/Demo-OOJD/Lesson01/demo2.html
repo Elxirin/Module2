@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+var myEmployee={
+empId:1001,
+empName:"Rahul",
+empDep:"Java",
+isAdmin:false,
+empSalary:4543.88,
+address:{
+street:"MG Road",
+city:"pune",
+pincode:410017
+}
+};
+
+console.log(myEmployee["empId"]);
+console.log(myEmployee.address);//all address will print
+console.log(myEmployee["address"]["city"]);
+delete myEmployee.empDep  //delete the empDep .....its print true
+</script>
+</head>
+<body>
+</body>
+</html>

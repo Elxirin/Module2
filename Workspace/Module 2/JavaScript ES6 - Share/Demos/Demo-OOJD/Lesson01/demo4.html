@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+var emp={};
+alert(emp.getProperty==undefined); //true
+
+var empOne={eid:1001,ename:'ABCD'};
+alert("eid" in empOne);//true
+alert("edep" in empOne);//false
+
+var empTwo={
+empId:1001,
+empName:'EWEY',
+empDep:'.NET'
+}
+for(key in empTwo){
+console.log(key);    //key
+console.log(empTwo[key]); //value
+}
+
+var productCode={
+"121":"Mobile",
+"11":"Rice",
+"9":"Pencil",
+"23":"Shirt"
+}
+for(code in productCode){
+console.log(code);    //key
+console.log(productCode[code]); //value
+}
+</script>
+</head>
+<body>
+</body>

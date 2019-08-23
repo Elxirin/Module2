@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function Employee(name){
+this.name=name;}
+
+Employee.prototype.getName=function(){return this.name}
+
+function Department(name,manager){
+this.name=name;
+this.manager=manager;}
+
+Department.prototype.getDepName=function(){return this.name}
+
+var emp=new Employee("Abcd");
+var dep=new Department("sales","BCDE");
+console.log(emp.getName());
+console.log(dep.getDepName());
+
+//but if we want to aceess dep.getName()
+
+dep._proto_=emp;  //dep inherit from emp
+console.log(dep._proto_.getName());
+</script>
+</head>
+<body>
+</body>
+</html>
